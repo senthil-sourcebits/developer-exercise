@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  <script type="text/javascript" src="http://code.jquery.com/qunit/git/qunit.js"></script>
+  <script>
+    window.nestedMenu = {"study":{"reading_material":["Orientation","Math","Verbal","Writing"],"flashcards":"Flashcards","bookmarks":"Bookmarks","notes":"Notes"},"practice":{"flashcards":"Flashcards","quizzes":"Quizzes","performance":"Overall Performance"},"test":{"tests":"Tests","reports":"Reports"}}
+    
+    $(document).ready(function(){
+      for (var title in nestedMenu) {
+       if (nestedMenu.hasOwnProperty(title)) {
+         $("#menu").append("<a class='menu' href='#'>"+title+'</a>');
+       }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="tests.js"></script>  
+</head>
+<body>
+  <div>Menu should be rendered below. Please use a nestedMenu structure to build a menu where clicking 
+    on a item from the nestedMenu should replace menu with nested items. Additionally provide functionality to go back menu state you are coming from</div>
+  <div id="menu">
+  </div>
+  <h1 id="qunit-header">QUnit example</h1>
+  <ol id="qunit-tests"></ol>
+  <div id="qunit-fixture">
+  </div>
+</body>
+</html>
