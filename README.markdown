@@ -21,7 +21,7 @@ Please provide the following functionality:
 
  * Please, provide a way to get back to the state of the headers you were coming from before the click
 
-Please, use your discretion in implementing nice-to-have features (things that you thing that menu is missing and are not part of requirements).
+Please, use your discretion in implementing nice-to-have features (things that you think that menu is missing and are not part of requirements).
 
 ## Ruby
 
