@@ -1,4 +1,5 @@
 require 'test/unit'
+require File.join(File.dirname(__FILE__), 'where')
 
 class WhereTest < Test::Unit::TestCase
   def setup
